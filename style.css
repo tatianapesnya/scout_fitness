@@ -1,0 +1,247 @@
+/*styles Tatiana Pesnya*/
+/* Home Page ScoutFitness*/
+/*Colors 
+	Green #299d83 
+	Dark Green #156452
+	Blue #28a3ea
+	Dark Blue #1e8ece
+	Gray #a4a4a4
+*/
+/*General *******************/
+
+html{
+    overflow: auto;
+    background-color: #fff;
+ 
+}
+a{
+	color: #616161;
+}
+
+/* Menu ********************/
+#menubar{
+	border-top: 5px solid #299d83;
+	border-bottom: 3px solid #a4a4a4;
+}
+#menubar_container
+{
+	position:relative;
+	margin:0 auto;
+	width:95%;
+}
+
+ul.menu_item li{
+	float: left;
+	list-style: none;
+}
+ul.menu_item li a{
+	color: #616161;
+	font-weight: 300;
+	font-family:  "Lato";
+	padding: 35px 20px 35px 20px;
+	line-height: 93px;
+	font-size: 20px;
+	cursor: pointer;
+	text-decoration: none;
+}
+ul.menu_item a.active{
+	background-color: #299d83;
+	color: #fff;
+}
+
+ul.menu_item li:hover a
+{
+	color:#fff;
+	text-decoration:none;	
+	background-color: #299d83;
+}
+a.Btn{
+	background-color: #299d83;
+	color:#fff;
+	font-family: "Lato";
+	font-weight: 300;
+	padding:15px 37px;
+	border:1px solid #156452;
+	text-decoration: none;
+	border-radius: 3px;
+}
+.logoMiddle
+{
+	width: 100px;
+	height: 96px;
+	float: left;
+	margin-left: 145px;
+}
+
+/*SLIDER**************/
+#sliderMain{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: 30px;
+}
+#sliderMain img{
+	text-align: center;
+	display: block;
+}
+.sliderTitle{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 20px;
+}
+.sliderTitle h3{
+	font-family: "Lobster";
+	font-size: 36px;
+	color: #fff;
+	text-shadow: 2px 2px rgba(0,0,0,0.6);
+}
+.sliderTexte{
+	position: absolute;
+	top:105px;
+	left: 25.5%;
+}
+
+/************** SEARCH FORM ****************/
+
+
+select {
+    padding-left:15px;
+    margin: 0;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    font-size: 15px;
+    font-family: "Lato";
+    font-weight: 100;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    height: 50px;
+	width: 185px;
+	margin-right: 10px;
+}
+.Slct label {
+	position:relative;
+}
+.Slct label:before{
+	content: "";
+	display: block;
+	pointer-events:none;
+	width: 22px;
+	height: 12px;
+	background: url(img/sprite_fitness.png) -7px -10px;
+	top: 5px;
+	right: 23px;
+	position: absolute;
+}
+.Slct, .Sbm{
+	display: inline-block;
+}
+.Sbm label:after{
+	content: "";
+	display: block;
+	pointer-events:none;
+	width: 40px;
+	height: 38px;
+	background: url(img/sprite_fitness.png) -43px -6px;
+	top: 71px;
+	right: 26px;
+	position: absolute;
+}
+input[type=submit]{
+	color: #fff;
+	text-shadow:2px 2px rgba(0,0,0,0.6);
+	border-radius: 3px;
+	border:1px solid #1e8ece;
+	background-color: #28a3ea;
+	width: 170px;
+	line-height: 52px;
+	cursor: pointer;
+	position: relative;
+	font-size: 15px;
+}
+#advanced_search{
+	text-align: center;
+	margin-top: 25px;
+}
+#advanced_search a{
+	font-family: "Lobster";
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #156452;
+	text-shadow:2px 2px rgba(0,0,0,0.6);
+}
+.btnFind {
+	text-align: center;
+	margin-top: 168px;
+}
+.btnFind a{
+	color: #fff;
+	text-shadow:2px 2px rgba(0,0,0,0.6);
+	border-radius: 3px;
+	border:1px solid #1e8ece;
+	background-color: #28a3ea;
+	width: 238px;
+	line-height: 55px;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+	font-size: 15px;
+}
+.btnFind a:after{
+	content: "";
+	display: block;
+	pointer-events:none;
+	width: 30px;
+	height: 38px;
+	background: url(img/sprite_fitness.png) -83px -6px;
+	top: 10px;
+	right: 8px;
+	position: absolute;
+}
+/****************** Carousel **************/
+span.titleContainer{
+	background-image: url(img/titleLine.png);
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+	display: inline-block;
+	width: 80%;
+	height: 1px;
+}
+h2.titleCarrousel{
+	font-size: 35px;
+	font-family: "Lato";
+	font-weight: 100;
+	color: #6b6b6b;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

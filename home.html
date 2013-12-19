@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"  > 
+<head profile="http://gmpg.org/xfn/11">
+ 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" maximum-scale="1.0" />
+
+    <meta name="viewport" content="initial-scale=1"> 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>PointSalon</title>
+    <meta name="description" content="Cloud-based Social SPA and Salon Management Software. Make appointments, manage Point of Sales, market through Social Networks." />
+    <link rel="stylesheet" rev="stylesheet" href="style.css" />
+    <link rel="stylesheet" rev="stylesheet" href="ospos.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://beta.www.scoutfitness.com/css/jqGrid/jquery-ui-1.8.1.custom.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="http://beta.www.scoutfitness.com/css/jqGrid/ui.jqgrid.css" />
+    <link rel='stylesheet' type='text/css' href='http://beta.www.scoutfitness.com/css/redmond/jquery-ui-1.9.2.custom.css' />
+    <!--GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+ 
+</head>
+<body>
+<div id="menubar">
+	<div id="menubar_container" class="menubar_header"  >
+		<div id="menubar_company_info" >
+    		<span id="company_title">scoutfitness-us</span><br />
+    	</div>
+		<div id="menubar_navigation" >
+			<div class="menu_item">
+                <ul class="menu_item">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Our Listings</a></li>
+                    <li><a href="#">Promotions</a></li>
+                </ul>               
+			</div>          
+		</div><!--menubar_navigation-->
+        <div class="logoMiddle">
+            <img src="img/logoMiddle.png" alt="ScoutFitness" />
+        </div>
+		<div id="menubar_footer"  class="menubar_footer">
+    		<div id="menubar_login">
+        		  <div  id="menubar_login_links" class="floatleft">
+         		     <a class="Btn" href="#">Login</a>
+                     <a class="Btn" href="#">Add your business</a>	      
+                  </div>
+            </div><!--menubar_login-->      
+        </div><!--menubar_footer-->
+	</div><!--menubar_container-->
+</div><!--menubar-->
+<div id="sliderMain">
+    <img src="img/slider.jpg" alt="scoutFitness" />
+    <div class="sliderTexte">
+    <header class="sliderTitle">
+      <h3>All These Great Establishments Are Waiting for You! </h3>
+      
+    </header>
+ 
+        <form action="index.php/booking/search" method="post" id="simple_form" >
+        <div class="Slct">
+             <label>
+            	<select name="cat_id" id="cat_id">
+                    <option value="0">Sélectionner un soin</option>
+                    <option value="1">Soins du visage</option>
+                    <option value="3">Miscellaneous</option>
+                    <option value="4">Coiffure</option>
+                </select>
+            </label>
+            <label>
+                <select name="locSearch" id="locSearch" >
+                    <option value="0">Toutes les villes</option>
+                    <option value="LYON">LYON</option>
+                    <option value="NANTES">NANTES</option>
+                    <option value="PARIS">PARIS</option>
+                    <option value="SURESNES">SURESNES</option>
+                    <option value="LYON, 69001">LYON (69001)</option>
+                    <option value="NANTES, 44000">NANTES (44000)</option>
+                    <option value="PARIS, 75017">PARIS (75017)</option>
+                    <option value="PARIS, 75896">PARIS (75896)</option>
+                    <option value="SURESNES, 92150">SURESNES (92150)</option>
+                </select>
+            </label>
+            <label>
+                <select name="account_id" id="account_id" >
+                    <option value="0" selected="selected">Choisir un salon</option>
+                    <option value="10214">katiatestfrench7</option>
+                    <option value="10235">nirvana4</option>
+                    <option value="10042">revesdowen</option>
+                    <option value="10222">newfeatures</option>
+                    <option value="10220">clarissetrial</option>
+                </select> 
+            </label>
+        </div>
+        <div class="Sbm">
+            <label>
+                 <input id="simple_search" type="submit" value="Search">
+            </label>
+        </div>
+          <div id="advanced_search"><a href="#">Advanced Search</a></div>
+        </form>	
+        <div class="btnFind">
+            <a href="#">Find trainer around you</a>
+        </div>	
+</div>	
+</div><!--sliderMain-->                                                                   
+<div id="content_area_wrapper">
+    <div id="content_area">
+    <span class="titleContainer">
+        <h2 class="titleCarrousel">Available bookings locally</h2>
+    </span>
+<div id="featured"  class="flexslider" >
+                    <ul class="slides">
+                        <li><p style='margin-top:10px;'></p>
+                            <p><a href='index.php/booking/presentation/10235/beta.www.scoutfitness.com'>nirvana 4
+                                <span>
+                                    <img src="img/blank_star.png" />
+                                    <img src="img/blank_star.png" /> 
+                                    <img src="img/star.png" /> 
+                                    <img src="img/star.png" /> 
+                                    <img src="img/star.png" />
+                                </span><br/>22 rue de la ville-en-pierre <br/>44000, Nantes<br/><br/></a> 
+                                <img class="qr_code" account_id="10235" title="Click to get a coupon!" style=" cursor:pointer;width:100px;margin-left:10px;float:left;"  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&choe=UTF-8&chl=index.php/booking/presentation/10235/beta.www.scoutfitness.com" />
+                                <img class="street_view" latitude=47.2253018 longitude=-1.5247233 style="cursor:pointer;width:65px;padding-top:17px;margin-left:10px;float:left;" 
+                        title="Click to view the location" src="settings/nirvana4.scoutfitness.com/website/img/main_picture.jpg"/> </p>
+                        </li>
+                        <li><p style='margin-top:10px;'></p>
+                            <p>
+                                <a class='slider_address' href='index.php/booking/presentation/10222/beta.www.scoutfitness.com'>Test New Features
+                                    <span>
+                                        <img src="img/blank_star.png" /> 
+                                        <img src="img/blank_star.png" /> 
+                                        <img src="img/star.png" /> 
+                                        <img src="img/star.png" /> 
+                                        <img src="img/star.png" />
+                                    </span><br/>rue katia <br/>75896, Paris<br/><br/>
+                                    </a> 
+                                        <img class="qr_code" account_id="10222" title="Click to get a coupon!" style=" cursor:pointer;width:100px;margin-left:10px;float:left;"  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&choe=UTF-8&chl=index.php/booking/presentation/10222/beta.www.scoutfitness.com" />
+                                        <img class="street_view" latitude=48.8550087 longitude=2.2720069 style="cursor:pointer;width:65px;padding-top:17px;margin-left:10px;float:left;" 
+                        title="Click to view the location" src="images/gmap_icon.jpg"      /> 
+                            </p>
+                        </li>
+                        <li>
+                            <p><a class='slider_address' href='index.php/booking/presentation/10220/beta.www.scoutfitness.com'  >Clarisse Salon
+                                <span style="margin-left:10px;" >
+                                    <img src="img/blank_star.png" /> 
+                                    <img src="img/blank_star.png" /> 
+                                    <img src="img/blank_star.png" /> 
+                                    <img src="img/blank_star.png" /> 
+                                    <img src="img/blank_star.png" />
+                                </span><br/>32 rue Merlin de Thionville <br/>92150, Suresnes<br/><br/></a> 
+                                <img class="qr_code" account_id="10220" title="Click to get a coupon!" style=" cursor:pointer;width:100px;margin-left:10px;float:left;"  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&choe=UTF-8&chl=index.php/booking/presentation/10220/beta.www.scoutfitness.com" /><img class="street_view" latitude=48.870086 longitude=2.2236372 style="cursor:pointer;width:65px;padding-top:17px;margin-left:10px;float:left;" 
+                        title="Click to view the location" src="images/gmap_icon.jpg"      /> </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a class='slider_address' href='index.php/booking/presentation/10042/beta.www.scoutfitness.com'  >Rêves d'Owen<span style="margin-left:10px;" >
+                                    <img src="img/blank_star.png" /> 
+                                    <img src="img/blank_star.png" /> 
+                                    <img src="img/blank_star.png" /> 
+                                    <img src="img/blank_star.png" /> 
+                                    <img src="img/blank_star.png" /></span><br/>12 boulevard Bessières <br/>75017, Paris<br/><br/></a> 
+                                    <img class="qr_code" account_id="10042" title="Click to get a coupon!" style=" cursor:pointer;width:100px;margin-left:10px;float:left;"  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&choe=UTF-8&chl=index.php/booking/presentation/10042/beta.www.scoutfitness.com" /><img class="street_view" latitude=48.8977121 longitude=2.3276008 style="cursor:pointer;width:65px;padding-top:17px;margin-left:10px;float:left;" 
+                        title="Click to view the location" src="img/gmap_icon.jpg"      /> </p>
+                        </li>
+                        <li>
+                            <p><a class='slider_address' 
+                        lat='45.7678193' long='4.8341477'  style='font-weight:bold;' href='index.php/booking/presentation/10214/beta.www.scoutfitness.com'  >Katia<span style="margin-left:10px;" ><img src="img/blank_star.png" /> 
+                        <img src="img/blank_star.png" /> 
+                        <img src="img/blank_star.png" /> 
+                        <img src="img/blank_star.png" /> 
+                        <img src="img/blank_star.png" /></span><br/>1 place des terreaux <br/>69001, Lyon<br/><br/></a> 
+                        <img class="qr_code" account_id="10214" title="Click to get a coupon!" style=" cursor:pointer;width:100px;margin-left:10px;float:left;"  src="https://chart.googleapis.com/chart?chs=100x100&cht=qr&choe=UTF-8&chl=index.php/booking/presentation/10214/beta.www.scoutfitness.com" /><img class="street_view" latitude=45.7678193 longitude=4.8341477 style="cursor:pointer;width:65px;padding-top:17px;margin-left:10px;float:left;" 
+                        title="Click to view the location" src="img/gmap_icon.jpg"/> </p>
+                        </li>
+                    </ul>
+                </div> 
+<div class="field_row clearfix"></div>
+<h2>Rated Salons</h2>
+<div id="best_salons"  class="flexslider" >
+    <ul class="slides"><li>
+</div>
+</div>
+</div>
+</div>
+	
+					<div class="clear"></div>	 </div>
+ 
+<div id="footer" >
+    <div class="colonneOne">
+        <h2>About ScoutFitness</h2>
+        <p>PointSalon offre aux  SPA, salons, instituts un outil de gestion internet sans investissement. Si vous gérez ou possédez de tels établissements, vous pourrez payer ces services au mois le mois, sans engagement, et vous disposerez d'un outil totalement intégré à Facebook.
+        </p>  
+    </div>
+    <a href="index.php/corporate" >
+        Salon/Fitness Center Manager? Register now!</a>
+ 
+</div>
+</body>
+</html>
